@@ -3,7 +3,7 @@ from particle import Particle
 from config import N_PARTICLES,STEPS
 
 def simulate(n_particles=N_PARTICLES,steps=STEPS):
-    particle=[Particle() for _ in range(n_particles)]
+    particle=[Particle(mode=0) for _ in range(n_particles)]
     traj= np.zeros((n_particles,steps,2))
 
     for t in range(steps):
